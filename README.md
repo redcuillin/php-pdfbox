@@ -1,3 +1,15 @@
+# THIS BRANCH v3-dev-new-features
+This is a branch for dangerous messing about with a view to adding functionality for php-doc v3.
+
+## ROADMAP
+
+Features that could/should be added:
+
+1. Either Create a new java application that uses pdfbox.jar library to provide command-line access to features currently missing from pdfbox.jar command-line utils.
+    1.1 In particular, provide a way to extract word coodinates.
+2. OR Create a new java application that provides a full command-line API to pdfbox, which can then be used by PHP to generate (eg) JSON data for pdfbox library output.
+3. An alternative method would be to implement something like PHP/Java Bridge, but it and various forks appear to be abandoned.
+
 # PHP pdfbox
 
 PHP-PDFBox is a tiny library which acts as a wrapper facilitating the use of PDFBox (https://pdfbox.apache.org/) in PHP.
