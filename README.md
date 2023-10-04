@@ -12,7 +12,7 @@ Features that could/should be added:
 
 # PHP pdfbox
 
-PHP-PDFBox is a tiny library which acts as a wrapper facilitating the use of PDFBox (https://pdfbox.apache.org/) in PHP.
+It provides a simple API for calling the pdfbox-app.jar. The library is currently restricted to functionality provided by PDFbox's command-line utilities. It currently supports PDFBox version 2.
 
 PDFBox is published under the Apache License v2.0 and is described as "The Apache PDFBox® library is an open source Java tool for working with PDF documents."
 
@@ -32,6 +32,8 @@ pdfbox-app.jar is included in the installation. You can/should verify the integr
 
 ## Main API usage:
 
+Basic usage can be done as follows:
+
 ```php
 $file = new \Pdfbox\Processor\PdfFile(
     new Pdfbox(
@@ -43,7 +45,7 @@ $file = new \Pdfbox\Processor\PdfFile(
 // Convert pdf to text
 echo $file->toText('test.pdf');
 ```
-(Providing a Logger object is optional in v2.0.1+.)
+(Providing a Logger object is optional in v2.0.2+.)
 To use with psr/log and a PSR-3 compliant logger, do something like:
 ```php
 use Psr\Log\LoggerInterface;
