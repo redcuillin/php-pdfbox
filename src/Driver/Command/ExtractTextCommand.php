@@ -101,6 +101,22 @@ class ExtractTextCommand implements CommandInterface
     }
 
     /**
+     * Set -Xms256m
+     */
+    public function xms256m(): self
+    {
+        return $this->setFlag('-Xms256m');
+    }
+
+    /**
+     * Set -Xmx2048m
+     */
+    public function xmx2048m(): self
+    {
+        return $this->setFlag('-Xmx2048m');
+    }
+
+    /**
      * Set -console.
      * Send text to console instead of file.
      */
